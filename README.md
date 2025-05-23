@@ -39,7 +39,8 @@ For example, head over to [https://webhook.site](https://webhook.site) — it wi
 📸 _Copy that URL into your `yourhttp_server.txt` file._
 I will use this URL and copy it into the project's yourhttp_server.txt file
 ![image](https://github.com/user-attachments/assets/5a4aac05-c3da-4e6a-b32e-0d4c4b8458bc)
-Your project is ready, now find a vector to copy the project to the victim's workstation(s).
+
+— Your project is ready, now find a vector to copy the project to the victim's workstation(s).
 
 ---
 
