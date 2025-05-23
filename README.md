@@ -1,23 +1,32 @@
-# GiveMeYourClipBoard
-Cybersecurity: Keepass agent leak
-GiveMeYourClipBoard is a project that streams the contents of a Windows PC's clipboard.
-Now imagine you're conducting a pentest and want to retrieve all the data stored in a workstation's memory.
-(Useful for passwords via KeePass, for example.)
+# 🧪 GiveMeYourClipBoard
 
-How does it work?
+## 🕵️‍♂️ Cybersecurity: KeePass Clipboard Agent Leak
 
-Scans the clipboard contents
-Sends each new content to a URL (yours, the one you want)
-Runs in the background (every 2 seconds)
-Easy to configure
-And most importantly: remains invisible.
+**GiveMeYourClipBoard** is a lightweight project that streams the contents of a Windows machine’s clipboard to a remote server.  
+Imagine you're conducting a **pentest** and want to retrieve sensitive data temporarily stored in memory — such as **passwords copied from KeePass**.
 
-Project Structure
+---
 
+## ⚙️ How It Works
+
+- 🔍 Continuously scans the Windows clipboard
+- 📤 Sends each new clipboard entry via **HTTP POST** to a URL of your choice
+- 🔄 Runs silently in the background (default: every 2 seconds)
+- ⚙️ Simple to configure with a `.txt` file
+- 🫥 And most importantly: **completely invisible to the user**
+
+---
+
+## 🗂️ Project Structure
+
+```
 📁 GiveMeYourClipBoard/
-├── yourhttp_server.txt <- contains your URL, your attacking web server
-└── givemeyourclipboard.ps1 <- standalone PowerShell script
-└── RUN.vbs <- VB script: Stealth Launcher
+├── yourhttp_server.txt       <- contains your server/webhook URL
+├── givemeyourclipboard.ps1   <- standalone PowerShell script
+└── RUN.vbs                   <- stealth launcher (no window shown)
+```
+
+---
 
 Let's Go!
 
