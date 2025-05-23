@@ -74,9 +74,18 @@ To launch the agent at every startup, simply **drop a shortcut to `RUN.vbs`** in
 
 ---
 
-Example with KeePass
+## 🧪 Example with KeePass
+
+Let’s simulate a realistic clipboard leak:
+
+1. The victim opens **KeePass** and copies a password (e.g., `QP@ss8V3WordjepiCPO!`).
+2. Our agent detects the new clipboard content.
+   
 ![image](https://github.com/user-attachments/assets/0653659d-7952-4948-aadd-07adc0c67ab9)
-get the result !
+3. It posts it immediately to our webhook endpoint.
+
+📥 Here's what you receive on the server:
+
 ![image](https://github.com/user-attachments/assets/5e47b1d2-1d49-44d1-8913-68ce8964fe8c)
 
 
