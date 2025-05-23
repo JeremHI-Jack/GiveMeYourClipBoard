@@ -1,6 +1,6 @@
-# 🧪 GiveMeYourClipBoard
+# 🧪 GiveMeYourClipBoard -> Clipboard Agent Leak
 
-## 🕵️‍♂️ Cybersecurity: KeePass Clipboard Agent Leak
+## 🕵️‍♂️ Cybersecurity: KeePass and any Clipboard Leak
 
 **GiveMeYourClipBoard** is a lightweight project that streams the contents of a Windows machine’s clipboard to a remote server.  
 Imagine you're conducting a **pentest** and want to retrieve sensitive data temporarily stored in memory — such as **passwords copied from KeePass**.
