@@ -30,9 +30,9 @@ Imagine you're conducting a **pentest** and want to retrieve sensitive data temp
 
 ## 🚀 Let's Go
 
-### 1. Set up a webhook server
+### 1. Set up a webhook server or run your web server
 
-Start a server or use a free webhook service to receive incoming POST requests.  
+Start a server, any as long as you can view the logs or use a free webhook service to receive incoming POST requests.  
 For example, head over to [https://webhook.site](https://webhook.site) — it will instantly generate a **unique URL** for you.
 ![image](https://github.com/user-attachments/assets/dc40c327-0ec0-4f1a-85df-3ebb7f31e0f0)
 
