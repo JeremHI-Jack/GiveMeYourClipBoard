@@ -85,6 +85,7 @@ Let’s simulate a realistic clipboard leak:
 3. It posts it immediately to our webhook endpoint.
 
 📥 Here's what you receive on the server:
+![image](https://github.com/user-attachments/assets/dc51368b-03cf-4882-a046-737d145e44ab)
 
 ![image](https://github.com/user-attachments/assets/5e47b1d2-1d49-44d1-8913-68ce8964fe8c)
 
